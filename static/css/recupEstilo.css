@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box; 
+    font-family: 'Arenas movedizas', sans-serif;
+}
+
+body{
+    background: rgba(238, 205, 238, 0.5) !important;
+    margin: 10;
+}
+
+/*barra de navegacion*/
+
+header{
+    background: #f8f9fa;
+    display: flex;
+    /*align-items: center;
+    justify-content: space-between;*/
+    box-shadow: 2px 3px rgba(246, 130, 242, 0.2);
+    flex-direction: column; 
+}
+
+.contenedorSuperior{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logosis{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+header img{
+    width: auto;
+    height: 68px;
+}
+
+.opcionesHeader{
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    margin: 10px;
+    transition: border-bottom .2s;
+    cursor: pointer;
+}
+.dropdown{
+    margin: 10px 20px;
+}
+
+.espacio{
+    width: 20%;
+    display: flex;
+    padding: 25px;
+    height: 80px;
+    align-items: center;
+}
+
+.espacio a:hover{
+    color: rgba(129, 57, 163);
+}
+.bg-light {
+    background-color: #fff!important;
+}
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
+.contenedorInferior{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.dropdown-menu a:hover{
+    background-color:rgba(129, 57, 163, 0.5)!important;
+    color: black !important;
+}
+
+.nav-link {
+    padding: 0 !important;
+    color: black !important;
+    border-bottom: 3px solid transparent;
+}
+.nav-link:hover{
+    color: rgba(129, 57, 163) !important;
+    border-bottom: 3px solid rgba(129, 57, 163);
+}
+
+
+header p{
+    font-size: 40px;
+}
+.form{
+    width: 100%;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(246, 245, 247, 0.8);
+    border-radius: 9px;	
+}
+.form-titulo{
+    background-color:#9A4EBB;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;  
+    font-weight: 120;
+    padding: 20px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-bottom: 5px solid darkgray;
+}
+
+.boton1{
+    background-color: #9A4EBB;
+    color: #fff;
+    border-radius: 7px;
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 9px;
+    border: none;
+    box-shadow: 0px 3px darkgrey;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+}
+.boton1:focus{
+    background-color:#E64040; 
+    border-radius: 13px;
+
+}
+.contenedor{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    padding: 15px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 13px;
+    font-size: 16px;
+    box-shadow: 0px 3px darkgrey;
+    outline: none;
+}
+.input-50{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+
+}
+.boton{
+    background-color: #9A4EBB;
+    color: #fff;
+    margin: 18px;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color:#E64040;
+}
+.boton:active{
+    transform: scale(1.05);
+}
+.form-link{
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+.submenu{
+    position: absolute;
+    background-color: #f6a6ec;
+    width: 20%;
+    display: none;
+}
+
+.submenu li a{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    font-family: 'Inconsolata', monoespacio;
+}
+
+nav li:hover .submenu{
+    display: block;
+}
+
+.submenu li a:hover{
+    background-color: #e683ce;
+    color: #fff;
+    font-weight: bold;
+}
+
+.form{
+    width: 95%;
+    width: 500px;
+    margin: auto;
+    background-color: rgb(246, 245, 247, 0.8);
+    border-radius: 9px;	
+}
+.form-titulo{
+    background-color:#9A4EBB;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;  
+    font-weight: 120;
+    padding: 20px;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    border-bottom: 5px solid darkgray;
+}
+
+.seleccion{
+    left: 30px;
+    position: relative;
+    box-sizing: border-box;
+
+    width: 95%;	display: block;
+    border-radius: 7px;
+}
+.boton1{
+    background-color: #9A4EBB;
+    color: #fff;
+    border-radius: 7px;
+    text-align: justify;
+    margin-bottom: 15px;
+    padding: 9px;
+    border: none;
+    box-shadow: 0px 3px darkgrey;
+    margin-bottom: 15px;
+    font-size: 16px;
+
+}
+.boton1:focus{
+    background-color:#E64040; 
+    border-radius: 13px;
+
+}
+.contenedor{
+    padding: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    padding: 15px;
+    border: none;
+    margin-bottom: 15px;
+    border-radius: 13px;
+    font-size: 16px;
+    box-shadow: 0px 3px darkgrey;
+    outline: none;
+}
+.input-50{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+.boton{
+    background-color: #9A4EBB;
+    color: #fff;
+    margin: 18px;
+    padding: 10px 40px;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.boton:hover {
+    background-color:#E64040;
+}
+.boton:active{
+    transform: scale(1.05);
+}
+.form-link{
+    width: 100%;
+    margin: 7px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 5px;
+}
+
+
+/* footer */
+
+#container {
+    width: 100%;
+    height: 330px;
+    padding: 30px 8px;
+}
+
+#part1 {
+    width: 100%;
+    height: 280px;
+    background-color: rgba(129, 57, 163, 0.4);
+}
+
+#part2 {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: -15px
+}
+
+#companyinfo {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    left: 8%;
+    top: 30px
+}
+
+#sitelink {
+    font-size: 35px;
+    color: #2F163B;
+
+}
+
+#sitelink:hover {
+    color: #CA17AC;
+}
+
+#title {
+    color: #2F163B;
+    position: relative;
+    top: 0px;
+    font-size: 14.1px
+}
+
+#detail {
+    color: #2F163B;
+    font-size: 16px
+}
+
+#explore {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -235px;
+    left: 29%
+}
+
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5 {
+    color: #2F163B;
+    font-size: 20px
+}
+
+.link {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    color: #2F163B;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    text-decoration: none; 
+}
+
+.link:hover,
+.link1:hover {
+    color: #CA17AC;
+}
+
+#visit {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -515px;
+    left: 42%
+}
+
+.text {
+    color: #2F163B;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+#legal {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -800px;
+    left: 59.5%;
+    text-decoration: none;
+}
+
+.link1 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #2F163B;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    margin-top: 7px
+}
+
+#subscribe {
+    position: relative;
+    top: -1080px;
+    left: 78%;
+    width: 14%;
+    height: 280px
+}
+
+#email {
+    color: white;
+    position: relative;
+    top: -20px
+}
+
+.btn {
+    position: relative;
+    top: -10px
+}
+
+#txt5 {
+    position: relative;
+    top: 0px
+}
+
+.social {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer
+}
+
+.fa-facebook-square:hover {
+    color: #3B579D
+}
+
+.fa-linkedin:hover {
+    color: #007BB6
+}
+
+.fa-twitter-square:hover {
+    color: #2CAAE1
+}
+
+#txt6 {
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 8%;
+    width: 80%;
+    color: #aaa7a7
+}
+
+.material-icons {
+    position: relative;
+    top: 3px
+}
+
+@media only screen and (max-width:1000px) {
+    #companyinfo {
+        width: 20%
+    }
+
+    #sitelink {
+        font-size: 30px
+    }
+
+    #txt5,
+    #txt4 {
+        font-size: 17px
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        top: -5px
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #companyinfo {
+        position: relative;
+        left: 3%
+    }
+
+    #txt6 {
+        position: relative;
+        left: 3%
+    }
+
+    #txt1,
+    #txt2,
+    #txt3,
+    #txt4,
+    #txt5 {
+        font-size: 15px
+    }
+
+    #explore {
+        position: relative;
+        top: -240px;
+        left: 26%
+    }
+
+    #sitelink {
+        font-size: 25px
+    }
+
+    #detail {
+        font-size: 13px
+    }
+
+    .link {
+        width: 60px
+    }
+
+    #visit {
+        position: relative;
+        top: -520px;
+        left: 37%
+    }
+
+    .text {
+        font-size: 13px
+    }
+
+    #legal {
+        position: relative;
+        top: -800px;
+        left: 54%
+    }
+
+    #subscribe {
+        position: relative;
+        top: -1080px;
+        left: 76%;
+        width: 20%
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        left: -110%;
+        top: px
+    }
+
+    #email,
+    .btn {
+        position: relative;
+        top: 0px
+    }
+}

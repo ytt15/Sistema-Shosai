@@ -1,0 +1,435 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+   }
+/*encabezado*/
+
+body{
+    background: rgba(238, 205, 238, 0.2) !important;
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    font-family: Consolas;
+    /*position: fixed;*/
+}
+
+header img{
+    width: 10%;
+    height: auto;
+    margin-top: 10%;
+    
+}
+.contenedorSuperior{
+    width: 100%;
+    display: flex;
+}
+
+header img{
+  
+    width: 70%;
+    height: 100px;
+}
+.wrapper {
+    width: 90%;
+    margin: auto;
+    overflow:hidden;
+}
+header {
+     background: #F7F7F1;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav {
+    float: right;
+    /* Desplazamos el nav hacia la izquierda */
+}
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    /* Limpiamos errores de float */
+}
+nav ul li {
+    float: left;
+    
+    font-size: 18px;
+}
+nav ul li a {
+    display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.submenu{
+    position: absolute;
+    background-color: rgba(182, 155, 228 , 0.9);
+    border-radius: 15px;
+    width: 20%;
+    display: none; /*para que no se vea el submenu*/
+}
+
+.submenu li a{
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center; 
+    display: block;
+    background-color: rgba(182, 155, 228 , 0.9);
+}
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li a:hover{
+    background-color: rgba(0, 128, 255, 0.3);
+    color: #fff;
+    font-weight: bold;
+}
+.titulo{
+    text-align: center;
+    background-color: #965b86;
+    color: white;
+    font-size: 20px;
+    padding: 58px;
+}
+main{
+    display: flex;
+    padding: 2px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.derecha{
+    width: 50%;
+    text-align: center;
+}
+
+.contenedor_carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-inner{
+    border-radius: 50px;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.1);	
+}
+
+/* columna izquierda */
+.accordion{
+    padding: 25px;
+}
+.accordion-button{
+    background-color: rgba(215, 189, 226, 0.8) !important;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-body{
+    background: rgba(215, 189, 226, 0.2);
+}
+
+.accordion-button{
+    background-color: rgba(153, 26, 208, 0.5) !important;
+    color: white !important;
+}
+.accordion-button:focus{
+    border-color: transparent !important;
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 0) !important;
+}
+.accordion-button::after{
+    background-image: url("https://dw-iconusers.flaticon.com/30317/30317537/1626309657438.svg?token=exp=1626310571~hmac=526f208a381dbc49112d33fb060220b7") !important;
+}
+.accordion-button:not(.collapsed) {
+    color: white !important;
+}
+
+
+/* pie de pagina */
+
+#container {
+    width: 100%;
+    height: 330px;
+    padding: 30px 8px;
+}
+
+#part1 {
+    width: 100%;
+    height: 280px;
+    background-color: rgba(129, 57, 163, 0.4);
+}
+
+#part2 {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: relative;
+    top: -15px
+}
+
+#companyinfo {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    left: 8%;
+    top: 30px
+}
+
+#sitelink {
+    font-size: 35px;
+    color: #2F163B;
+
+}
+
+#sitelink:hover {
+    color: #CA17AC;
+}
+
+#title {
+    color: #2F163B;
+    position: relative;
+    top: 0px;
+    font-size: 14.1px
+}
+
+#detail {
+    color: #2F163B;
+    font-size: 16px
+}
+
+#explore {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -235px;
+    left: 29%
+}
+
+#txt1,
+#txt2,
+#txt3,
+#txt4,
+#txt5 {
+    color: #2F163B;
+    font-size: 20px
+}
+
+.link {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    color: #2F163B;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    text-decoration: none; 
+}
+
+.link:hover,
+.link1:hover {
+    color: #CA17AC;
+}
+
+#visit {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -515px;
+    left: 42%
+}
+
+.text {
+    color: #2F163B;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+#legal {
+    width: 14%;
+    height: 280px;
+    position: relative;
+    top: -800px;
+    left: 59.5%;
+    text-decoration: none;
+}
+
+.link1 {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    color: #2F163B;
+    background-color: transparent;
+    border-top: 2px solid white;
+    position: relative;
+    top: -10px;
+    margin-top: 7px
+}
+
+#subscribe {
+    position: relative;
+    top: -1080px;
+    left: 78%;
+    width: 14%;
+    height: 280px
+}
+
+#email {
+    color: white;
+    position: relative;
+    top: -20px
+}
+
+.btn {
+    position: relative;
+    top: -10px
+}
+
+#txt5 {
+    position: relative;
+    top: 0px
+}
+
+.social {
+    position: relative;
+    top: -5px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer
+}
+
+.fa-facebook-square:hover {
+    color: #3B579D
+}
+
+.fa-linkedin:hover {
+    color: #007BB6
+}
+
+.fa-twitter-square:hover {
+    color: #2CAAE1
+}
+
+#txt6 {
+    color: white;
+    position: relative;
+    top: 13px;
+    left: 8%;
+    width: 80%;
+    color: #aaa7a7
+}
+
+.material-icons {
+    position: relative;
+    top: 3px
+}
+
+@media only screen and (max-width:1000px) {
+    #companyinfo {
+        width: 20%
+    }
+
+    #sitelink {
+        font-size: 30px
+    }
+
+    #txt5,
+    #txt4 {
+        font-size: 17px
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        top: -5px
+    }
+}
+
+@media only screen and (max-width:850px) {
+    #companyinfo {
+        position: relative;
+        left: 3%
+    }
+
+    #txt6 {
+        position: relative;
+        left: 3%
+    }
+
+    #txt1,
+    #txt2,
+    #txt3,
+    #txt4,
+    #txt5 {
+        font-size: 15px
+    }
+
+    #explore {
+        position: relative;
+        top: -240px;
+        left: 26%
+    }
+
+    #sitelink {
+        font-size: 25px
+    }
+
+    #detail {
+        font-size: 13px
+    }
+
+    .link {
+        width: 60px
+    }
+
+    #visit {
+        position: relative;
+        top: -520px;
+        left: 37%
+    }
+
+    .text {
+        font-size: 13px
+    }
+
+    #legal {
+        position: relative;
+        top: -800px;
+        left: 54%
+    }
+
+    #subscribe {
+        position: relative;
+        top: -1080px;
+        left: 76%;
+        width: 20%
+    }
+
+    #txt5,
+    .social {
+        position: relative;
+        left: -110%;
+        top: px
+    }
+
+    #email,
+    .btn {
+        position: relative;
+        top: 0px
+    }
+
+    #part1 {
+        height: 250px
+    }
+}
